@@ -1,15 +1,28 @@
 import { useState } from 'react'
-import './App.css'
 import Ball from './components/Ball';
 
 function App() {
   const [balls, setBalls] = useState<number[]>([5,11,16,23,32]);
-  
-  
+
+  const shuffle = (array:number[]) => {
+    return array.sort(() => Math.random() - 0.5);
+  }
+
+  const newBalls = () => {
+    let numbers:number[] = [];
+
+    for (let i = 5; i <= 36; i++) {
+      numbers.push(i);
+    }
+
+    const newNumbers = shuffle(numbers).slice(0,5).sort((a:number, b:number) => a - b);
+
+    setBalls(newNumbers);
+  }
 
   return (
     <div>
-      <button type='button' >Новые цифры</button>
+      <button type='button' onClick={newBalls} >Новые цифры</button>
       <div>
         {balls.map((ball:number) => (
           <Ball value={ball}/>

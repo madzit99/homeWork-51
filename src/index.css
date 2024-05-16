@@ -1,0 +1,57 @@
+body{
+  background-color: blanchedalmond;
+}
+
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.circle {
+  margin-top: 30px;
+}
+
+.my-numbers {
+  color: aqua;
+  font-size: 45px;
+  font-weight: bold;
+  padding: 30px;
+  background: rgb(24, 19, 19);
+  border-radius: 50%;
+  height: 60px;
+  max-width: 60px;
+}
+
+.my-numbers:hover {
+  background: rgb(27, 64, 30);
+  background: rgb(57, 52, 52);
+}
+
+.my-button {
+  padding: 10px 150px;
+  border: 1px solid rgb(116, 139, 74);
+  border-radius: 20px;
+  background-color: rgb(116, 139, 74);
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: 25px;
+  font-style: oblique;
+}
+
+
+
+.App {
+  padding: 50px 100px 100px 100px;
+  border: 1px solid#757575;
+  border-radius: 20px;
+  background-color: #757575;
+}
+
+.ball-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; 
+  padding: 80px 0;
+}

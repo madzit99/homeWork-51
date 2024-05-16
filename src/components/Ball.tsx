@@ -4,8 +4,8 @@ interface Props {
 
 const Ball: React.FC<Props> = ({value}) => {
     return(
-        <div>
-            <span>{value}</span>
+        <div className="circle" >
+            <span className="my-numbers">{value}</span>
         </div>
     )
 }

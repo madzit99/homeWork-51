@@ -6,19 +6,19 @@ const App = () => {
 
   const shuffle = (array:number[]) => {
     return array.sort(() => Math.random() - 0.5);
-  }
+  };
 
   const newBalls = () => {
     let numbers:number[] = [];
 
     for (let i = 5; i <= 36; i++) {
       numbers.push(i);
-    }
+    };
 
     const newNumbers = shuffle(numbers).slice(0,5).sort((a:number, b:number) => a - b);
 
     setBalls(newNumbers);
-  }
+  };
 
   return (
     <div className='App'>
@@ -29,7 +29,7 @@ const App = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
